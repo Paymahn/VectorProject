@@ -7,7 +7,7 @@ colors = ["red", "green", "blue"]
 shapes = ["circle", "square", "triangle"]
 
 
-#create vector class
+#Vector class creation (Functionality includes conversion from database optimised storage to Vector object, and vector object to python dictionary for front end rendering)
 
 class Vector :
     def __init__(self, dimensions, color, shape, timestamp=None):

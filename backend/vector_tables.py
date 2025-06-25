@@ -44,7 +44,7 @@ class DBManager :
                 processed_dimensions = vector_object.dimensions.copy()
                 if len(processed_dimensions) < 5:
                     processed_dimensions += [0] * (5 - len(processed_dimensions))  # Pad with zeros if less than 5 dimensions
-                processed_dimensions = processed_dimensions[:5]  # Ensure we only take the first 5 dimensions
+                processed_dimensions = processed_dimensions[:5]  # Ensure we only take the first 5 digits
 
 
                 logging.info(f"Inserted vector metadata with ID: {vector_id}")
