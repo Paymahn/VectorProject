@@ -5,7 +5,7 @@ import datetime
 import time
 
 from vector_models import Vector, generate_one_vector
-from vector_tables import DBManager
+from backend.database_manager import DBManager
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

@@ -53,14 +53,6 @@ class DBManager :
             raise
 
 
-
-
-
-    
-        
-        
-
-
 # will call execute query to insert the vector data into two different tables in our database. 
     def insert_vector_data(self, vector_object):
         if not self.conn or not self.cursor:
@@ -164,10 +156,6 @@ class DBManager :
         return Vector.load_from_db_record_into_object(metadata, dimensions)
 
 
-    
-
-
-
     def create_tables(self):
         logging.debug("Attempting to create tables in the database.")
         if not self.conn or not self.cursor:
@@ -223,14 +211,4 @@ class DBManager :
             self.conn.rollback()
             raise
         logging.debug("All tables created successfully.")
-
-
-
-
-
-    
-        
-
-
-
         

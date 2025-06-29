@@ -32,7 +32,6 @@ class Vector :
             'shape': self.shape,
             'length': self.length,
             'creation_timestamp': self.creation_timestamp.isoformat()
-        
         }
     
     # Method that reconstructs a vector object from the database record.
@@ -65,7 +64,7 @@ class Vector :
 
 
 
-# Create one instance of a vector
+# Create one instance of a vector, used in a loop to randomly populate our app with vectors.
 
 def generate_one_vector() :
     total_dimensions = random.randint(2,5)
